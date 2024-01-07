@@ -1,0 +1,20 @@
+﻿<Window x:Class="MVVM_DEMO.View.TelefonosView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM_DEMO.View"
+        mc:Ignorable="d"
+        Title="TelefonosView" Height="350" Width="550">
+    <Grid>
+        <Label Content="Número de teléfono" HorizontalAlignment="Left" Margin="75,75,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="75,100,0,0" TextWrapping="Wrap" Text="{Binding Ntelefono}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="72,120,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="75,150,0,0" TextWrapping="Wrap" Text="{Binding Nombre}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Dirección" HorizontalAlignment="Left" Margin="75,170,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="75,200,0,0" TextWrapping="Wrap" Text="{Binding Direccion}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Observaciones" HorizontalAlignment="Left" Margin="75,223,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="75,250,0,0" TextWrapping="Wrap" Text="{Binding Observaciones}" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="443,253,0,0" VerticalAlignment="Top" Command="{Binding GuardarCommand}"/>
+    </Grid>
+</Window>
